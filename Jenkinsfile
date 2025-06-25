@@ -54,7 +54,7 @@ pipeline {
             }
         }
 
-        stage ('Run Defender for Cloud CLI) {
+        stage ('Run Defender for Cloud CLI') {
             steps {
                 script {
                         withCredentials([string(credentialsId: 'ACR_URI', variable: 'DOCKER_REGISTRY')]) {
